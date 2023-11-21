@@ -21,6 +21,10 @@ The `RUN` instructions update the package cache, installs some software packages
 - Open a browser and point to the server that is running Docker and hosting your container.
 `http://localhost:80`
 
+## Delete the image from
+> If you decide that you no longer need or want an entire repository of images, you can delete the repository. By default, you cannot delete a repository that contains images; however, the --force flag allows this. To delete a repository that contains images (and all the images within it), run the following command.
+`aws ecr delete-repository --repository-name dockerapacheserver --force --region region`
+
 ## Deploy to Elastic Container Registry
 - Registry comes with configurations setups to configure both access, building your image, tag your image and pushing to the repository.
 
